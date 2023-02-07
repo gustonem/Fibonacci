@@ -8,20 +8,20 @@ public class InterviewApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(InterviewApplication.class, args);
-        System.out.println(fibbonaci(30));
+        System.out.println(fibonacci(30));
     }
 
-    public static int fibbonaci(int n) {
+    public static Long fibonacci(int n) {
 
         if (n == 0) {
-            return 0;
+            return 0L;
         }
 
         if (n == 1) {
-            return 1;
+            return 1L;
         }
 
-        return fibbonaci(n - 1) + fibbonaci(n - 2);
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
 }
